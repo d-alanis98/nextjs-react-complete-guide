@@ -1,11 +1,10 @@
-// Styles
-import styles from '../styles/Home.module.css';
+import { Container, Heading } from '@chakra-ui/react';
 
 
 const Home: React.FC = () => (
-  <div className={styles.main}>
-    <h2>Hello from Next.js</h2>
-  </div>
+    <Container className='p-4'>
+        <Heading>Hello from Next.js</Heading>
+    </Container>
 );
 
 export default Home;
