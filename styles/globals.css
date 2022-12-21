@@ -18,6 +18,11 @@
   h4 {
     @apply text-base;
   }
+
+  #__next {
+    @apply h-full flex flex-col;
+    flex-grow: 1;
+  }
 }
 
 :root {
@@ -108,8 +113,11 @@ body {
 }
 
 body {
+  width: 100vw;
   color: rbg(--foreground-rgb);
-  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh !important;
   background: linear-gradient(
       to bottom,
       transparent,
