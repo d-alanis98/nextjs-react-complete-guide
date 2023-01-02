@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  nextjs-react-complete-guide:
+    build:
+      context: ../../
+      dockerfile: docker/development/Dockerfile
+    image: nextjs-react-complete-guide-development:latest
+    # Mapping host directories to directories on the container. This is done so that the updates in the local folder reflect on the container in real time and vice versa
+    volumes:
+      - '.:/app'
+    ports:
+      - '3000:3000'
